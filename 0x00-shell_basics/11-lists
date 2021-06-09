@@ -1,4 +1,3 @@
-#!/bin/bash
-ls -al 
-ls -al -p
-ls -al /boot/
+#!/bin/bash 
+ls al . .. /boot/
+

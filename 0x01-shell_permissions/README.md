@@ -25,3 +25,4 @@ _Shell Permission Scripts_
   * find ./ -type d -exec chmod ugo+x {}+      Adds executive permission to all subdirectories\ of the current directory for                                               the owner, the group owner and all other users.\
 
   * mkdir -m 751 dir_holberton    Creates a directory called dir_holberton with permission 751 in the working directory.\
+  * chgrp holberton hello         Changes the group owner to holberton for the file hello.\

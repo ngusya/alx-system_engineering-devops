@@ -32,3 +32,5 @@ _Shell Permission Scripts_
 * sudo chown -h betty:holberton _hello  Changes the owner and the group owner of _hello to betty and holberton respectively.\
 
   * sudo chown --from=guillaume betty hello  Changes the owner of the file hello to betty ifit is owned by the user guillaume.\
+
+  * telnet towel.blinkenlight.nl    Plays the star wars IV episode in the terminal.\

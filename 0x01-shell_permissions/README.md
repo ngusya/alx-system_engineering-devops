@@ -28,3 +28,5 @@ _Shell Permission Scripts_
   * chgrp holberton hello         Changes the group owner to holberton for the file hello.\
 
   * sudo chown betty:holberton -R ./   Changes the owner to betty and the group owner to holberton for all the files and\directories in the working directory.\
+
+* sudo chown -h betty:holberton _hello  Changes the owner and the group owner of _hello to betty and holberton respectively.\

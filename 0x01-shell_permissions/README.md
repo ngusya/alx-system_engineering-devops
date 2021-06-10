@@ -13,3 +13,5 @@ _Shell Permission Scripts_
   * touch hello       Creates an empty file called hello\
   * chmod 744 hello   Adds executive permission to the owner of the file hello\
   * chmod 754 hello   Adds executive permission to the owner and the group owner\ and read permission to other users to the file hello\
+
+  * chmod ugo+x hello Adds execution permission to the owner, the group owner and other users to the file hello\

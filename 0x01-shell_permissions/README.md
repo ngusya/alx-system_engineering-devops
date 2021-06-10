@@ -21,3 +21,5 @@ _Shell Permission Scripts_
   * chmod 753 hello   Sets the mode of the hello file to (-rwxr-x-wx)
 
   * chmod --reference = olleh hello   Sets the mode of the file hello the same as olleh mode\
+  
+  * find ./ -type d -exec chmod ugo+x {}+      Adds executive permission to all subdirectories\ of the current directory for                                               the owner, the group owner and all other users.\

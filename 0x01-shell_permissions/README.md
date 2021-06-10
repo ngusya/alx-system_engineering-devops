@@ -8,4 +8,7 @@ _Shell Permission Scripts_
   *id -un, --name    Prints the effective username of the current user\
   *id -gn            Prints all the groups the current user is part of\
   
-  *sudo chown betty hello  Changes the owner of the file hello to the user betty
+  *sudo chown betty hello  Changes the owner of the file hello to the user betty\
+  
+  *touch hello       Creates an empty file called hello\
+  

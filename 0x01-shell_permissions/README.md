@@ -15,3 +15,4 @@ _Shell Permission Scripts_
   * chmod 754 hello   Adds executive permission to the owner and the group owner\ and read permission to other users to the file hello\
 
   * chmod ugo+x hello Adds execution permission to the owner, the group owner and other users to the file hello\
+  * chmod 007 hello   Sets the permission to the file hello as follows (Owner: no permission at all , Group owner: no perm                      ission at all, Other users:all permissions)\

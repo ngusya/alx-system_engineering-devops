@@ -23,3 +23,5 @@ _Shell Permission Scripts_
   * chmod --reference = olleh hello   Sets the mode of the file hello the same as olleh mode\
   
   * find ./ -type d -exec chmod ugo+x {}+      Adds executive permission to all subdirectories\ of the current directory for                                               the owner, the group owner and all other users.\
+
+  * mkdir -m 751 dir_holberton    Creates a directory called dir_holberton with permission 751 in the working directory.\

@@ -11,4 +11,4 @@ _Shell Permission Scripts_
   *sudo chown betty hello  Changes the owner of the file hello to the user betty\
   
   *touch hello       Creates an empty file called hello\
-  
+  *chmod 744 hello   Adds executive permissions to the owner of the file hello\

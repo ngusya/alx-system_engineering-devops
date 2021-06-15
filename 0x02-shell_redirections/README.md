@@ -17,7 +17,7 @@ Shell Redirections Scripts
 
  * touch \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:) echo "Holberton School\n"    >>     Creates a file named \*\\'"Holberton School"\'\\$\?\*\*\*\*\*:)
 
- * ls -al > ls_cwd_content        >>    Writes into the file ls_cwd_content the result of the command ls -al.
+ * ls -la > ls_cwd_content        >>    Writes into the file ls_cwd_content the result of the command ls -al.
 
  * find . -name "*.js" type f -delete >>  Deletes all the regular files with a .js extension that are present in the current directory and all its subfolders.
 

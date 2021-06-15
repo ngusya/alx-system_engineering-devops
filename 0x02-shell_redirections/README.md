@@ -10,3 +10,5 @@ Shell Redirections Scripts
  * cat /etc/passwd /etc/hosts    >>     Displays the content of /etc/passwd and /etc/hosts.
 
  * tail -n 10 /etc/passwd        >>     Displays the last 10 lines of the /etc/passwd file.
+
+ * head -n 10 /etc/passwd        >>     Displays the first 10 lines of the /etc/passwd file.

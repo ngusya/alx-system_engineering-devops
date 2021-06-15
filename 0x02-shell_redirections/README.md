@@ -14,3 +14,7 @@ Shell Redirections Scripts
  * head -n 10 /etc/passwd        >>     Displays the first 10 lines of the /etc/passwd file.
 
  * awk "NR==3" iacta             >>     Displays the third line of the file iacta.
+
+ * touch \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:) echo "Holberton School\n"    >>     Creates a file named \*\\'"Holberton School"\'\\$\?\*\*\*\*\*:)
+
+ *ls -al > ls_cwd_content        >>    Writes into the file ls_cwd_content the result of the command ls -al.

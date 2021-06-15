@@ -12,3 +12,5 @@ Shell Redirections Scripts
  * tail -n 10 /etc/passwd        >>     Displays the last 10 lines of the /etc/passwd file.
 
  * head -n 10 /etc/passwd        >>     Displays the first 10 lines of the /etc/passwd file.
+
+ * awk "NR==3" iacta             >>     Displays the third line of the file iacta.

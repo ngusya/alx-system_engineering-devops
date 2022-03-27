@@ -2,7 +2,7 @@
 # program for checking status about a file
 file="school"
 if [ -f "$file" -o -b "$file" -o -c "$file" -o -d "$file" ]; then
-	echo "$ school file exists"
+	echo "school file exists"
 	if [ -f "$file" ]; then
 		if [ "$(wc -c $file)" != "0" ]; then
 			echo "school file is not empty"

@@ -9,9 +9,9 @@ if [ -f "$file" -o -b "$file" -o -c "$file" -o -d "$file" ]; then
 		else
 			echo "$ school file is empty"
 		fi
-		echo "$ school file is a regular file"
+		echo "$ school is a regular file"
 	else
-		echo "$ school file is not empty"
+		echo "$ school is not empty"
 	fi
 else
 	echo "$ school file does not exist"

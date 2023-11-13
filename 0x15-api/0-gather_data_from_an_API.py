@@ -7,7 +7,6 @@
  """
 
 import requests
-from sys import argv
 import sys
 
 """
@@ -15,7 +14,7 @@ access a url with employee ID to return information
 """
 
 if __name__ == "__main__":
-    ID = int(argv[1])
+    ID = sys.argv[1]
     url = "https://jsonplaceholder.typicode.com/"
     user = requests.get(url + "users/{}".format(sys.argv[1])).json()
     todos = requests.get(url + "todos?userId={}".format(ID)).json()

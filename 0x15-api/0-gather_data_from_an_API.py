@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+script that, using this REST API, for a given employee ID,
+returns information about his/her TODO list progress
+"""
 import requests
 from sys import argv
 """
@@ -12,7 +16,8 @@ if __name__ == "__main__":
     progress
     """
     employee_ID = int(argv[1])
-    user = requests.get("https://jsonplaceholder.typicode.com/users/{}".format(employee_ID)).json()
+    user = requests.get("https://jsonplaceholder.typicode.com/users/{}".
+                        format(employee_ID)).json()
     todo = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}".
                         format(employee_ID)).json()
     tasks = []

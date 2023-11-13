@@ -23,14 +23,4 @@ if __name__ == "__main__":
     print("Employee {} is done with tasks({}/{}):".format(
         user.get("name"), len(completed), len(todos)))
     [print("\t {}".format(c)) for c in completed]
-
-    """
-    completed = []
-    for task in todos:
-        if task.get('completed') is True:
-            tasks.append(task.get('title'))
-    print("Employee {} is done with tasks({}/{}):".
-          format(user.get('name'), len(completed), len(todos)))
-    for task in tasks:
-        print("\t {}".format(task))
-        """
+    

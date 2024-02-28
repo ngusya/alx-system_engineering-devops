@@ -1,11 +1,37 @@
 #!/usr/bin/env bash
 #Install nginx web server
-sudo apt-get -y install nginx
+#Configure the new machine by installing
+#Nginx: It should be listening on port 80
+# and serve a page that would return a Hllo Wolrd string
+
+echo -e "Updating and installing Nginx.\n"
+sudo apt-get update -y -qq && \
+	sudo apt-get install nginx -y
+
+echo -e "\nSetting env"
+sudo service nginx start
+
+#allowing nginx on firewall
 sudo ufw allow 'Nginx HTTP'
-sudo chmod '0777' /var/www/html/index.nginx-debian.html
-sudo echo 'Hello World!' > /var/www/html/index.nginx-debian.html
-sudo sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
-sudo chmod -R '777' /var/www/html/
-sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
-sudo sed -i "/listen 80 default_server;/a error_page 404 /404.html;\nlocation = /custom_404.html {\nroot /var/www/html;\ninternal;\n}" /etc/nginx/sites-available/default
+
+"Give the user ownership to website files for easy editing"
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
+
+#Backup default index
+cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bkp
+
+#Creating new index
+echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
+
+#Setting up /redirect_me to a youtube video
+sudo sed -i '24i\	rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+
+#Setting up a 404 page
+echo "Ceci n'est pas une page" >> /var/www/html/error_404.html
+sudo sed -i '25i\       error_page404 /error_404.html;' /etc/nginx/sites-available/default
+
+#Restarting nginx
 sudo service nginx restart
+
+echo -e "\nCompleted.\n"
